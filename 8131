@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4460003641659338"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم البرمجة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>مرحبًا بك في موقع تعلم البرمجة</h1>
+        <p>ابدأ رحلتك في البرمجة الآن!</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#about">عن الموقع</a>
+        <a href="#courses">الدورات</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>عن الموقع</h2>
+        <p>يوفر هذا الموقع مصادر مجانية ومحتوى مبسط لتعلم لغات البرمجة مثل HTML، CSS، وJavaScript.</p>
+    </section>
+
+    <section id="courses" class="section">
+        <h2>الدورات المتوفرة</h2>
+        <div class="course-list">
+            <div class="course">
+                <div class="course">
+    <h3>HTML</h3>
+    <p>تعلم أساسيات بناء المواقع باستخدام HTML.</p>
+    <a href="html-lesson.html"><button>ابدأ الآن</button></a>
+</div>
+            </div>
+            <div class="course">
+    <h3>CSS</h3>
+    <p>تعلم تنسيق الصفحات باستخدام CSS.</p>
+    <a href="css-lesson.html"><button>ابدأ الآن</button></a>
+</div>
+
+<div class="course">
+    <h3>JavaScript</h3>
+    <p>تعلم البرمجة التفاعلية باستخدام JavaScript.</p>
+    <a href="javascript-lesson.html"><button>ابدأ الآن</button></a>
+</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>تواصل معنا</h2>
+        <form>
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section

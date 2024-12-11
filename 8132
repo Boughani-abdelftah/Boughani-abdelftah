@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>دورة تعلم JavaScript</h1>
+    </header>
+
+    <section class="section">
+        <h2>مقدمة عن JavaScript</h2>
+        <p>JavaScript هي لغة برمجة تُستخدم لإنشاء تفاعلات على الويب، مثل التحقق من المدخلات أو التفاعل مع المستخدم.</p>
+        <p>مثال بسيط لعرض رسالة منبثقة عند النقر على زر:</p>
+        <pre>
+        function showMessage() {
+            alert("مرحبًا بك في JavaScript!");
+        }
+        </pre>
+        <button onclick="showMessage()">انقر هنا لعرض رسالة</button>
+
+        <p>حاول كتابة الكود أعلاه في المحرر أدناه واضغط على "عرض النتيجة".</p>
+
+        <!-- محرر JavaScript -->
+        <textarea id="js-editor" rows="10" style="width: 100%;">function showMessage() { alert("مرحبًا بك في JavaScript!"); }</textarea>
+        <button onclick="runJS()">عرض النتيجة</button>
+
+        <!-- عرض النتيجة -->
+        <iframe id="js-result" style="width: 100%; height: 200px; border: 1px solid #ddd; margin-top: 20px;"></iframe>
+    </section>
+
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

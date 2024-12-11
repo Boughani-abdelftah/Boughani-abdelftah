@@ -1,0 +1,36 @@
+// وظيفة لإظهار رسالة عند الضغط على زر بدء الدورة
+function showMessage(course) {
+    alert(`رائع! لقد اخترت البدء في تعلم ${course}. بالتوفيق!`);
+}
+
+// إضافة ديناميكية للرسائل
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // منع الإرسال الافتراضي
+    alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريبًا.');
+});
+// وظيفة لتشغيل كود HTML من المحرر وعرضه داخل الإطار (iframe)
+function runCode() {
+    const code = document.getElementById('code-editor').value;
+    const resultFrame = document.getElementById('result');
+    resultFrame.contentDocument.body.innerHTML = code;
+}
+// تشغيل كود CSS وعرضه في الإطار (iframe)
+function runCSS() {
+    const cssCode = document.getElementById('css-editor').value; // الحصول على الكود من المحرر
+    const resultFrame = document.getElementById('css-result'); // تحديد الإطار لعرض النتيجة
+    resultFrame.contentDocument.body.innerHTML = '<p>هذا النص سيظهر بلون خلفي أصفر!</p>'; // نص افتراضي لعرض النتيجة
+    const style = document.createElement('style');
+    style.innerHTML = cssCode; // إضافة الكود المدخل داخل <style>
+    resultFrame.contentDocument.head.appendChild(style); // إدخال الكود إلى رأس المستند
+}
+
+// تشغيل كود JavaScript وعرضه في الإطار (iframe)
+function runJS() {
+    const jsCode = document.getElementById('js-editor').value; // الحصول على الكود من المحرر
+    const resultFrame = document.getElementById('js-result'); // تحديد الإطار لعرض النتيجة
+    resultFrame.contentDocument.body.innerHTML = ''; // مسح المحتوى السابق
+    const script = document.createElement('script');
+    script.innerHTML = jsCode; // إضافة الكود المدخل داخل <script>
+    resultFrame.contentDocument.head.appendChild(script); // إدخال الكود إلى رأس المستند
+}
+
